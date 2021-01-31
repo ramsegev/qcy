@@ -31,7 +31,7 @@ export default function Widgets() {
     const [widgetList, setWidgetList] = useState([...params.widgetList]);
     const [detailWidgetIndex, setDetailWidgetIndex] = useState(0);
     const [isNew, setIsNew] = useState(true);
-    const [editModal, setEditModal] = useState(widgetList.length > 0);
+    const [editModal, setEditModal] = useState(widgetList.length <= 0);
     const handleDetailsClick = () => {
         setDetailWidgetIndex(params.detailWidgetIndex.index)
     };
